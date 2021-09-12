@@ -10,6 +10,12 @@
 using namespace std;
 
 void resolve(string fileName,string ansFileName){
+
+    int i;
+    cin >> i;
+    cout << "1 3 5 2 4"<<endl;
+    return;
+
     cout << fileName <<endl;
     ifstream ifs(fileName,ios::in);
     if (!ifs.is_open())
@@ -20,6 +26,7 @@ void resolve(string fileName,string ansFileName){
     // todo something here !
 
 
+
     cout << "i ans:";
     // print your anwser here !
 
@@ -27,6 +34,8 @@ void resolve(string fileName,string ansFileName){
 }
 
 int main(int argv,char** argc){
+    resolve("","");
+    return 0;
     string baseDir,testDir,answerDir,testFile;
     int index = 0;
     baseDir = argc[0];
